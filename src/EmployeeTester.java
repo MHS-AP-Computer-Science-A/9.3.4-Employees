@@ -3,8 +3,8 @@
 public class EmployeeTester {
 
 	public static void main(String[] args) {
-		//Test HourlyEmployee
-		HourlyEmployee_Complete he = new HourlyEmployee_Complete("Amy", "4/28", "Helpdesk Staff", 18.75);
+        	//Test HourlyEmployee
+		HourlyEmployee he = new HourlyEmployee("Amy", "4/28", "Helpdesk Staff", 18.75);
 		he.addHours(10);
 		he.addHours(15);
 		System.out.println(he); //Pay should be 468.75
@@ -13,7 +13,7 @@ public class EmployeeTester {
 		System.out.println("\n" + he); //Pay should be 93.75
 		
 		//Test SalariedEmployee
-		SalariedEmployee_Complete se = new SalariedEmployee_Complete("Molly", "9/15", "Engineer", 93522);
+		SalariedEmployee se = new SalariedEmployee("Molly", "9/15", "Engineer", 93522);
 		System.out.println("\n" +se); //Pay should be 3597
 		
 		//Test pay periods
